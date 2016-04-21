@@ -13,6 +13,6 @@
   "author": "Maneesh Sethi <maneesh@pavlok.com> (http://pavlok.com)",
   "license": "ISC",
   "dependencies": {
-    "pavlok-beta-api-login": "^1.3.1"
+    "pavlok-beta-api-login": "^2.0.0"
   }
 }
