@@ -17,7 +17,10 @@ function checkMem(){
 		(percent * 100).toFixed(1) + "% usage");
 
 	if(percent > 0.8 && alertValid){
-		pavlok.vibrate(200, "PC RAM usage at " + (percent * 100).toFixed(0) + "%!");
+		pavlok.vibrate({
+			"intensity": 200,
+			"message": "PC RAM usage at " + (percent * 100).toFixed(0) + "%!"
+		});
 		alertValid = false; //Don't alert again until we drop below 80% and then go above
 		console.log("Warned about usage on your Pavlok!");
 	} else {
