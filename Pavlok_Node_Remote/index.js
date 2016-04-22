@@ -51,6 +51,19 @@ app.get("/beep", function(req, result){
 	console.log("Beeped!");
 	result.redirect("main.html");
 });
+app.get("/pattern", function(req, result){
+	pavlok.pattern({
+		"request": req,
+		"pattern": [ "beep", "vibrate", "zap" ],
+		"count": 2
+	});
+	console.log("Pattern'd!");
+	result.redirect("main.html");
+});
+app.get("/logout", function(req, result){
+	pavlok.logout(req);
+	result.redirect("/");	
+});
 
 app.listen(80, function(){
 	console.log("Visit the IP address of this machine, or http://localhost:80/.");
