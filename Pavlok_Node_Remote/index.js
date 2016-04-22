@@ -24,7 +24,7 @@ app.get("/", function(req, result){
 	if(pavlok.isLoggedIn(req)){
 		result.redirect("main.html");
 	} else {
-		result.redirect("/auth");
+		result.redirect("login.html");
 	}
 });
 app.get("/auth", function(req, result){
