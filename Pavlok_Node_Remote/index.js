@@ -65,6 +65,6 @@ app.get("/logout", function(req, result){
 	result.redirect("/");	
 });
 
-app.listen(80, function(){
-	console.log("Visit the IP address of this machine, or http://localhost:80/.");
+app.listen(5311, function(){
+	console.log("Visit the IP address of this machine, or http://localhost:5311/.");
 });
