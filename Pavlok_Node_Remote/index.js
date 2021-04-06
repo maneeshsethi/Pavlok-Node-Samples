@@ -10,12 +10,12 @@ var app = express();
 app.use(express.static(__dirname + '/public'));
 
 //Setup Pavlok component
-pavlok.init("9377ed97a2ccfd3bfd4b7a6d226e3f92504416ac5aeb6aa6fee96343e05fbc4e", 
-			"ddea1deb41de6c18097997f8d63f9296ea4565917f8617961f198bb7d145f8cd", {
+pavlok.init("32c8cc7c70f5b25f7368774570fb3aeee7975ff54a0052be9bcba6cc1706c65e", 
+			"4f7c43e85065536307cd6567a4ae7728f68533d866398f8665d565a11ccb1d8f", {
 	"verbose": true,
 	"app" : app,
 	"message": "Hello from the Pavlok Remote example!",
-	"callbackUrl": "http://localhost:5135/auth/pavlok/result",
+	"callbackUrl": "https://pavlok-remote-b7gthmpw.porter.run/auth/pavlok/result/auth/pavlok/result",
 	"callbackUrlPath": "/auth/pavlok/result",
 	"successUrl": "/",
 	"errorUrl": "/error"
